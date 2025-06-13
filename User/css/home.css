@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", sans-serif;
+}
+
+body {
+  background-image: url('/Images/Background/bg\ home.jpg'); /* Ganti dengan nama file kamu */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #979797;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.login-btn button {
+    font-weight: bold;
+  padding: 8px 16px;
+  background-color: #2959CC;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-btn button:hover {
+  background-color: #23419a;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.text-left {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.text-right {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.typing-text {
+  border-right: 3px solid #2f55f2;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #2f56f200; }
+}
+
+.plus-icon {
+  width: 550px;
+  height: auto;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+.checkup-reminder {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: rgba(239, 239, 239, 0.458);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.reminder-title {
+  font-size: 14px;
+  color: #2959CC; /* abu-abu terang */
+  margin-bottom: 5px; /* jarak bawah */
+  font-weight: bold;
+}
+
+.reminder-detail {
+  font-size: 12px;
+  color: #000000; /* biru sesuai tema */
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(239, 239, 239, 0.458);
+  margin: 60px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.features-text {
+  flex: 1;
+}
+
+.features-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.features-text span {
+  color: #2959CC;
+}
+
+.features-text p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.features-text ul {
+  list-style: none;
+}
+
+.features-text li {
+  margin-bottom: 10px;
+}
+
+.doctor-img img {
+  margin-bottom: -50px;
+  max-width: 450px;
+  display: block;
+}
+
+.footer {
+  font-size: 13px;
+  background-color: #2959CC;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-info {
+  margin-top: 10px;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome To MediPlus</title>
+  <link rel="stylesheet" href="/User/css/home.css"/>
+  <link rel="icon" href="/Images/Asset/plus.png" type="image/png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"> 
+      <img src="/Images/Logo/Logo.png" alt="MediPlus Logo" height="35"/>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="active">Homepage</a>
+      <a href="#">Appointment</a>
+      <a href="#">Chatbot</a>
+    </nav>
+    <div class="login-btn">
+      <button>Login</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="text-left">
+         <span id="typing-left" class="typing-text"></span>
+    </h1>
+    <img src="/Images/Asset/Big Plus.png" alt="Blue Plus Icon" class="plus-icon floating" />
+    <h1 class="text-right">
+         <span id="typing-right" class="typing-text"></span>
+    </h1>
+    <div class="checkup-reminder">
+      <p class="reminder-title">Upcoming Check-up</p>
+      <p class="reminder-detail">Dental medical check-up</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-text">
+      <h2>Your Best <span>Health Care Experience</span> Awaits.</h2>
+      <p>The best way to get better experience at health care start from here</p>
+      <ul>
+        <li>✔ Make appointment instantly</li>
+        <li>✔ AI chatbot assistant</li>
+        <li>✔ Notification check up result & appointment schedule reminder</li>
+      </ul>
+    </div>
+
+     <div class="doctor-img">
+      <img src="/Images/Asset/3d doctor.png" alt="Doctor Image"/>
+     </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="/Images/Logo/Logo white.png" alt="MediPlus Logo" height="24"/>
+    </div>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Benefits</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="footer-info">
+      <p>&copy;2025 MediPlus all right reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const leftTexts = ["Health", "Happy "];
+    const rightTexts = ["Happy", "Health"];
+
+    let count = 0; // index untuk menentukan teks ke berapa
+    let index = 0; // posisi huruf saat mengetik
+    let isDeleting = false;
+
+    const leftEl = document.getElementById("typing-left");
+    const rightEl = document.getElementById("typing-right");
+
+    function type() {
+        const leftText = leftTexts[count % leftTexts.length];
+        const rightText = rightTexts[count % rightTexts.length];
+
+        // Update index untuk efek ketik/hapus
+        if (!isDeleting) {
+        index++;
+        } else {
+        index--;
+        }
+
+        // Ambil substring untuk ditampilkan
+        leftEl.textContent = leftText.substring(0, index);
+        rightEl.textContent = rightText.substring(0, index);
+
+        // Jika selesai mengetik semua huruf
+        if (!isDeleting && index === leftText.length) {
+        setTimeout(() => {
+            isDeleting = true;
+            type();
+        }, 1000); // jeda sebelum menghapus
+        return;
+        }
+
+        // Jika selesai menghapus
+        if (isDeleting && index === 0) {
+        isDeleting = false;
+        count++;
+        setTimeout(type, 400); // jeda sebelum mengetik ulang
+        return;
+        }
+
+        // Kecepatan mengetik / menghapus
+        const speed = isDeleting ? 60 : 150;
+        setTimeout(type, speed);
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+
+
+
+
+</body>
+</html>
