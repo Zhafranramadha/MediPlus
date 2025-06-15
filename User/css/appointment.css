@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", sans-serif;
+}
+
+body {
+  background-image: url('/Images/Asset/bg\ standart.png'); /* Ganti dengan nama file kamu */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #979797;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.login-btn button {
+    font-weight: bold;
+  padding: 8px 16px;
+  background-color: #2959CC;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-btn button:hover {
+  background-color: #23419a;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notification-btn button {
+  border: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 50%;
+  background-color: #2959CC;
+  
+}
+
+.notification-btn button:hover {
+  background-color: #23419a
+}
+
+.notification-btn img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  margin-top: 2px;
+}
+
+.appointment-container {
+  max-width: 1300px;
+  margin: 80px auto;
+  background-color: rgba(239, 239, 239, 0.458);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.appointment-title {
+  font-size: 30px;
+  color: #2959CC;
+  margin-bottom: 50px;
+}
+
+.appointment-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F9FA;
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin: 20px 20px 20px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.appointment-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: #2959CC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-wrapper img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.appointment-date {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.appointment-date.past {
+  color: #FF4E4E;
+}
+
+.appointment-date.future {
+  color: #2959CC;
+}
+
+.view-details {
+  color: #2959CC;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.view-details:hover {
+  text-decoration: underline;
+}
+
+.appointment-action {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+
+.make-appointment-btn {
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  background-color: #2959CC;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.make-appointment-btn:hover {
+  background-color: #1e428f;
+}
+
+.footer {
+  font-size: 13px;
+  background-color: #2959CC;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-info {
+  margin-top: 10px;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}

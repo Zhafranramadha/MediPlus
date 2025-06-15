@@ -28,7 +28,6 @@ body {
 
 .nav-links a:hover {
   color: #000;
-  font-weight: bold;
 }
 
 .nav-links .active {
@@ -48,6 +47,32 @@ body {
 
 .login-btn button:hover {
   background-color: #23419a;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notification-btn button {
+  border: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 50%;
+  background-color: #2959CC;
+  
+}
+
+.notification-btn button:hover {
+  background-color: #23419a
+}
+
+.notification-btn img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  margin-top: 2px;
 }
 
 .hero {
@@ -160,8 +185,30 @@ body {
   margin-bottom: 10px;
 }
 
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.feature-icon {
+  background-color: #2959CC;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .doctor-img img {
-  margin-bottom: -50px;
+  margin-bottom: -72px;
   max-width: 450px;
   display: block;
 }
